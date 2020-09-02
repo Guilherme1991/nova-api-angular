@@ -1,0 +1,11 @@
+<div class="alinha-texto">
+<h2>Retorno de API com HttpClient trazendo do site</h2> 
+<h1>JSONPlaceholder</h1>
+</div>
+<div class="flexible">
+<div class="coluna" *ngFor="let item of imagens">
+    <p>{{item.id}}</p>
+    <p>{{item.title}}</p>
+    <img [attr.src]="item.thumbnailUrl" alt="Image">
+</div>
+</div>

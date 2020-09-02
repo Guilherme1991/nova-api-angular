@@ -1,0 +1,30 @@
+.flexible {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.coluna {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+.alinha-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.alinha-texto::after { 
+  content: '';
+  display: block;
+  height: 5px;
+  width: 150px;
+  margin-top: 10px;
+  background: linear-gradient(45deg, black, transparent);
+}
